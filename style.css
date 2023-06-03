@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+/* html {
+  background-color: #0079FF;
+} */
+
+.material {
+  display: block;
+  width: 80%;
+  margin-left: 15%;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  float: bottom;
+  width: 10%;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #F6FA70;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(adjust-hue(#F6FA70, 45deg));
+  transform: translateY(-0.25em);
+}
+
+.btn-next {
+  float: right;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.py-repl-box {
+  margin-bottom: 5px;
+}
+
+.py-repl-run-button {
+  opacity: 1;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #0079FF;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #00DFA2;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
