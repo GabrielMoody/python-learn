@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Python - Perhitungan</title>
+</head>
+<body>
+
+  <py-config>
+    terminal = false
+
+    [splashscreen]
+        enabled = false
+  </py-config>
+
+  <div class="sidebar">
+    <a href="./index.html">Home</a>
+    <a class="active" href="./perhitungan.html">Perhitungan</a>
+    <a href="./variabel.html">Variabel</a>
+    <a href="./string.html">String</a>
+    <a href="./list.html">List</a>
+    <a href="./tuples.html">Tuples</a>
+    <a href="./maps.html">Maps</a>
+    <a href="./ifelse.html">Bertanya sesuatu dengan if & else</a>
+    <a href="./loop.html">Pengulangan</a>
+  </div>
+
+  <main class="material">
+    <h2 class="title">Perhitungan</h2>
+    <p>Biasanya saat melakukan perhitungan antara 2 angka seperti 8 X 12, kamu akan menggunakan bantuan kalkulator atau menghitungnya secara manual dengan kertas dan pensil. Bagaimana jika perhitungan itu dilakukan menggunakan Python? Mari kita coba.</p>
+    <p>Coba jalankan program python berikut dengan menekan tombol <i class="fas fa-play"></i> dibawah</p>
+    <py-repl output="tst">8 * 12</py-repl>
+    <div id="tst"></div>
+    <br>
+
+    <p>Saat melakukan perkalian menggunakan Python, kita tidak menggunakan simbol perkalian X melainkan simbol * (tanda bintang) </p>
+    <p>Kalian bisa melakukan operasi perkalian, penambahan, pengurangan dan pembagian menggunakan Python. Simbol yang digunakan Python untuk melakukan operasi matematika disebut <i>operators</i>, seperti tabel berikut</p>
+    <table style="width: 20%;">
+      <tr>
+        <th>Simbol</th>
+        <th>Operasi</th>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td> Penambahan</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td> Pengurangan</td>
+      </tr>
+      <tr>
+        <td>*</td>
+        <td> Perkalian</td>
+      </tr>
+      <tr>
+        <td>/</td>
+        <td> Pembagian</td>
+      </tr>
+    </table>
+
+    <button class="btn btn-prev" onclick="redirect('index.html')">Sebelumnya</button>
+    <button class="btn btn-next" onclick="redirect('variabel.html')">Selanjutnya</button>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/9338fcac57.js" crossorigin="anonymous"></script>
+</body>
+</html>

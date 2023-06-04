@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Python - Variabel</title>
+</head>
+<body>
+
+  <py-config>
+    terminal = false
+
+    [splashscreen]
+        enabled = false
+  </py-config>
+
+  <div class="sidebar">
+    <a href="./index.html">Home</a>
+    <a href="./perhitungan.html">Perhitungan</a>
+    <a class="active" href="./variabel.html">Variabel</a>
+    <a href="./string.html">String</a>
+    <a href="./list.html">List</a>
+    <a href="./tuples.html">Tuples</a>
+    <a href="./maps.html">Maps</a>
+    <a href="./ifelse.html">Bertanya sesuatu dengan if & else</a>
+    <a href="./loop.html">Pengulangan</a>
+  </div>
+
+  <main class="material">
+    <h1 class="title">Variabel</h1>
+    <p>Variabel dalam bahasa pemrograman menggambarkan tempat untuk menyimpan informasi seperti angka, teks, kumpulan angka dan lain sebagainya. Variabel juga bisa dikatakan sebagai label untuk sesuatu.</p>
+    <p>Contoh, untuk membuat variabel dengan nama fred, kita menggunakan tanda sama dengan (=) dan memberitahu Python informasi apa yang akan dilabel oleh variabel. Dalam contoh ini, kita membuat variabel fred dan memberitahu Python bahwa variabel ini menandai angka 100</p>
+    <p>Coba jalankan program Python berikut dengan menekan tombol <i class="fas fa-play"></i> dibawah</p>
+    <py-repl>fred = 100
+print(fred)
+    </py-repl>
+    <py-terminal></py-terminal>
+    <p>Kita menambahkan perintah print(fred) untuk menampilkan isi variabel fred kedalam layar.</p>
+    <p>Kalian juga dapat merubah angka yang ada divariabel fred sesuka hati kalian dan jalankan kembali programnya. Maka, hasil yang keluar dalam layar akan sesuai dengan angka yang kalian isi.</p>
+
+    <button class="btn btn-prev" onclick="redirect('perhitungan.html')">Sebelumnya</button>
+    <button class="btn btn-next" onclick="redirect('string.html')">Selanjutnya</button>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/9338fcac57.js" crossorigin="anonymous"></script>
+</body>
+</html>

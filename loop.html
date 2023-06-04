@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Python - Pengulangan</title>
+</head>
+<body>
+
+  <py-config>
+    terminal = false
+
+    [splashscreen]
+        enabled = false
+  </py-config>
+
+  <div class="sidebar">
+    <a href="./index.html">Home</a>
+    <a href="./perhitungan.html">Perhitungan</a>
+    <a href="./variabel.html">Variabel</a>
+    <a href="./string.html">String</a>
+    <a href="./list.html">List</a>
+    <a href="./ifelse.html">Bertanya sesuatu dengan if & else</a>
+    <a class="active" href="./loop.html">Pengulangan</a>
+  </div>
+
+  <main class="material">
+    <h1 class="title">Pengulangan</h1>
+    <p>Sangat menyebalkan jika kita harus melakukan hal yang sama berulang kali. Tapi dalam pemrograman kita memiliki pengulangan <i>for</i>, dimana dapat melakukan perintah berulang kali secara otomatis.</p>
+    <p>Untuk melakukan print hello sebanyak 5 kali, kalian dapat melakukanya seperti berikut</p>
+    <py-repl>
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+    </py-repl>
+    <py-terminal></py-terminal>
+    <br>
+
+    <p>Tetapi hal tersebut sangat membosankan untuk dilakukan terus menerus. Jadi daripada melakukan hal membosankan tersebut, kalian dapat menggunakan pegulangan for seperti berikut.</p>
+    <py-repl>
+      for x in range(0, 5):
+        print("hello")
+    </py-repl> 
+    <py-terminal></py-terminal>
+    <br>
+
+    <p>kode diatas memberi tahu Python untuk melakukan hal berikut:
+      <ul>
+        <li>Mulai menghitung dari 0 dan berhenti apabila sudah mencapai 5</li>
+        <li>Untuk setiap angka yang dihitung, isi variabel x dengan nilai angka yang dihitung</li>
+      </ul>
+    </p>
+    <p>Kemudian Python akan mengeksekusi blok kode yang ada didalam pengulangan for.</p>
+
+    <button class="btn btn-prev" onclick="redirect('ifelse.html')">Sebelumnya</button>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Python - String</title>
+</head>
+<body>
+
+  <py-config>
+    terminal = false
+
+    [splashscreen]
+        enabled = false
+  </py-config>
+
+  <div class="sidebar">
+    <a href="./index.html">Home</a>
+    <a href="./perhitungan.html">Perhitungan</a>
+    <a href="./variabel.html">Variabel</a>
+    <a class="active" href="./string.html">String</a>
+    <a href="./list.html">List</a>
+    <a href="./ifelse.html">Bertanya sesuatu dengan if & else</a>
+    <a href="./loop.html">Pengulangan</a>
+  </div>
+
+  <main class="material">
+    <h1 class="title">String</h1>
+    <p>Dalam istilah pemrograman, kita menyebut teks sebagai string. String merupakan kumpulan dari huruf huruf. Semua huruf, angka dan simbol yang ada di keyboard bisa menjadi sebuah String. Dalam hal ini, nama kalian bisa menjadi String dan juga alamat kalian.</p>
+    <br>
+    <h2>Membuat String</h2>
+    <p>Di Python, kita membuat string dengan menaruh tanda kutip diantara teks. Contoh, kita menggunakan variabel fred yang kita gunakan sebelumnya dan menggunakan variabel ini untuk menandai sebuah string.</p>
+    <p>Coba jalankan program Python berikut dengan menekan tombol <i class="fas fa-play"></i> dibawah</p>
+    <py-repl>fred = "Python itu mudah dan menyenangkan"
+print(fred)
+    </py-repl>
+    <py-terminal></py-terminal>
+
+    <button class="btn btn-prev" onclick="redirect('perhitungan.html')">Sebelumnya</button>
+    <button class="btn btn-next" onclick="redirect('ifelse.html')">Selanjutnya</button>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/9338fcac57.js" crossorigin="anonymous"></script>
+</body>
+</html>

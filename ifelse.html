@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Python - if & else</title>
+</head>
+<body>
+
+  <py-config>
+    terminal = false
+
+    [splashscreen]
+        enabled = false
+  </py-config>
+
+  <div class="sidebar">
+    <a href="./index.html">Home</a>
+    <a href="./perhitungan.html">Perhitungan</a>
+    <a href="./variabel.html">Variabel</a>
+    <a href="./string.html">String</a>
+    <a href="./list.html">List</a>
+    <a class="active" href="./ifelse.html">Bertanya sesuatu dengan if & else</a>
+    <a href="./loop.html">Pengulangan</a>
+  </div>
+
+  <main class="material">
+    <h1 class="title">If & else</h1>
+    <p>Dalam pemrograman kita sering menanyakan pertanyaan Ya atau Tidak, dan menentukan untuk melakukan sesuatu berdasarkan jawaban. Kita dapat menanyakan pertanyaan "Apakah umur kamu lebih dari 20 tahun?" dan jika jawabannya Ya, kita dapat merespon jawabannya dengan "Kamu terlalu tua!"</p>
+    <p>Pertanyaan seperti ini disebut <i>kondisi</i>, dan kita menggabungkan kondisi ini degan respon jawaban kedalam pernyataan if. Kondisi dapat lebih rumit dari satu pertanyaan dan pernyataan if dapat menggabungkan lebih dari satu pertanyaan dan merespon hal yang berbeda sesuai dengan jawabannya.</p>
+    <p>pernyataan if dapat ditulis seperti berikut.</p>
+    <py-repl>age = 30 
+if age > 20:
+  print("Kamu terlalu tua!")
+    </py-repl>
+    <py-terminal></py-terminal>
+    <br>
+
+    <p>Pernyataan if terdiri dari kata kunci if, diikuti dengan kondisi dan titik dua (:), seperti usia > 20:. Garis-garis yang mengikuti titik dua harus berada didalam blok, dan jika Jawaban atas pertanyaan
+    adalah ya (atau True, dalam Pemrograman Python), perintah didalam blok akan dijalankan. Sekarang,mari kita jelajahi cara menulis blok dan Kondisi.</p>
+    <br>
+
+    <h2>Block merupakan kumpulan perintah pemrograman</h2>
+    <p>Sebuah blok kode adalah kumpulan dari perintah perintah pemrograman. Contoh, saat if age > 20: itu benar, kalian mungkin ingin melakukan perintah lebih dari hanya print "Kamu terlalu tua". Mungking kalian ingin melakukan print kalimat lain, seperti berikut.</p>
+
+    <py-repl>
+age = 25
+if age > 20:
+  print("Kamu terlalu tua!")
+  print("Kenapa kamu ada disini?")
+    </py-repl>
+    <py-terminal></py-terminal>
+    <button class="btn btn-prev" onclick="redirect('list.html')">Sebelumnya</button>
+    <button class="btn btn-next" onclick="redirect('loop.html')">Selanjutnya</button>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

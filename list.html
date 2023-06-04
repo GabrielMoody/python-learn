@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Python - List</title>
+</head>
+<body>
+
+  <py-config>
+    terminal = false
+
+    [splashscreen]
+        enabled = false
+  </py-config>
+
+  <div class="sidebar">
+    <a href="./index.html">Home</a>
+    <a href="./perhitungan.html">Perhitungan</a>
+    <a href="./variabel.html">Variabel</a>
+    <a href="./string.html">String</a>
+    <a class="active" href="./list.html">List</a>
+    <a href="./ifelse.html">Bertanya sesuatu dengan if & else</a>
+    <a href="./loop.html">Pengulangan</a>
+  </div>
+
+  <main class="material">
+    <h1 class="title">List</h1>
+    <p>"laba-laba, Ular, Singa, Katak" merupakan daftar nama-nama hewan dari sekian banyak hewan yang ada. Kita dapat menyimpan daftar nama hewan kedalam variabel kumpulan_hewan menggunakan string seperti ini.</p>
+    <py-repl>kumpulan_hewan = "laba-laba, Ular, Singa, Katak" 
+print(kumpulan_hewan)
+    </py-repl>
+    <py-terminal></py-terminal>
+    <br>
+
+    <p>Tetapi kita juga dapat membuat list. Sebuah jenis ajaib dari Python Object yang dapat kita manipulasi. Berikut contoh saat kita menggunakan list</p>
+    <py-repl>kumpulan_hewan = ["laba-laba", "Ular", "Singa", "Katak"] 
+print(kumpulan_hewan)
+    </py-repl>
+    <py-terminal></py-terminal>
+
+    <button class="btn btn-prev" onclick="redirect('string.html')">Sebelumnya</button>
+    <button class="btn btn-next" onclick="redirect('tuples.html')">Selanjutnya</button>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/9338fcac57.js" crossorigin="anonymous"></script>
+</body>
+</html>
